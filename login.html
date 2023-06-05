@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='nofollow' href="_content/Syncfusion.Blazor/styles/bootstrap4.css" rel="stylesheet" /> 
+    <link rel="stylesheet" rel='nofollow' href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css> 
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+	<title>Login page🚶‍♀</title>
+</head>
+<style type="text/css">
+	
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family:'poppins',sans-serif;
+	}
+	.container{
+		height: 100vh;
+		width:100%;
+		display: flex;
+		align-items: center;
+		justify-content:center;
+		background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+	}
+	.form{
+		max-width: 430px;
+		width: 50%;
+		padding: 30px;
+		border-radius: 6px;
+		background-color:black;
+		opacity: 0.7;
+		margin-left: 100px;
+	}
+	header{
+		font-size: 28px;
+		font-weight: 600;
+		color: white;
+		text-align: center;
+	}
+	form{
+		margin-top: 30px;
+	}
+	form .field{
+		position: relative;
+		height:50px;
+		width:100% ;
+		margin-top: 20px;
+	}
+	.field input, .field button{
+		height: 100%;
+		width: 100%;
+		border: none;
+		font-size: 16px;
+		font-weight: 400;
+		border-radius: 6px;
+	}
+	.field input{
+		padding:0 15px ;
+		border: 2px solid white;
+	}
+	.input-box img{
+		top: 50%;
+		right:10px ;
+		transform: translateY(-50px);
+		position: absolute;
+		font-size: 18px;
+		color: #8b8b8b;
+		padding: 5px;
+	}
+
+	.form-link{
+		text-align: center;
+		margin-top: 10px;
+	}
+	.form-link span, .form-link a{
+		font-weight: 400;
+		font-size: 14px;
+		color: #232836;
+	}
+	.form a{
+		text-decoration: none;
+		color:#0171d3 ;
+		border-radius:90%;
+	}
+	form a:hover{
+		text-decoration: underline;
+	}
+	.line{
+		position: relative;
+		height: 1px;
+		width: 100%;
+		margin:36px 0;
+		background-color: #d4d4d4;
+	}
+	.line::before{
+		content: 'Or';
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		background-color: #fff;
+		color: #232836;
+		padding: 0 15px;
+		left: 50%;
+	}
+	.media-options{
+		height: 16px;
+		width: 16px;
+	}
+	button:hover{
+		background-color: blue;
+		color: white;
+	}
+	.social-media
+	{
+	margin-left:120px;	
+	}
+	.social-media a{
+		font-size:25px;
+		padding:10px;
+	}
+	 a:hover{
+		color:#f9004d;
+	}
+	.navbar{
+    width:1500px;
+    height:75px;
+    margin: auto;
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+}
+.icons{
+    width: 200px;
+    float: right;
+    height: 70px;
+}
+.logo{
+    color:orange;
+    font-size:35px;
+    font-family: Arial;
+    padding-right: 1px;
+    float: right;
+    padding-top: 7px;
+    font-family: red serif;
+    cursor:pointer;
+    letter-spacing: 1px;
+}
+span{
+    color:#f9004d;
+}
+.menu{
+    width: 400px;
+    float: 70px;
+    height: 70px;
+    margin-left:550px;
+}
+ul{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 16px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+    transition:0.4s ease-in-out;
+}
+ul li a:hover{
+    color: orange;
+}
+	
+</style>
+<body>
+	 <div class="navbar">
+    <div class="icons">
+        <h2 class="logo">Wo<span>MeN💃</span></h2>
+    </div>
+     <div class="menu">
+        <ul>
+            <li><a href="C:\Users\nooka\Desktop\my projects\woMen\home1.html">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="C:\Users\nooka\Desktop\my projects\woMen\login.html">LOGIN</a></li>
+            <li><a href="#">SIGNUP</a></li>
+            <li><a href="C:\Users\nooka\Desktop\my projects\woMen\contact.html">CONTACT</a></li>
+        </ul>
+
+    </div>
+	<section class="container forms">
+		<div class="form login">
+			<div class="form-content">
+				<header style="color:white;">Login🚶‍♀</header>
+
+				<form action="#">
+
+				<div class="field input-field">
+					<input type="email" placeholder="Email" class="input">
+				</div>
+
+				<div class="field input-field">
+					<input type="password" placeholder="password" class="password">
+					
+				</div>
+
+				<div class="form-link">
+					<a href="#" class="forget-pass">Forget Password?</a>
+				</div>
+
+				<div class="field button-field">
+					<button><a href="C:\Users\nooka\Desktop\my projects\woMen\landing page.html">Login</a></button>
+				</div>
+
+				<div class="form-link">
+					<span>Already have an account? <a href="#" class="forget-pass">SignUp</a></span>
+				</div>
+
+		</div>
+
+		<div class="line"></div>
+
+		<div class="social-media">
+			<a class="btn btn-primary" style="background-color:white;" href="#!" role="button"
+  ><i class="fab fa-facebook"></i
+></a>
+<a class="btn btn-primary" style="background-color:white;" href="#!" role="button"
+  ><i class="fab fa-twitter"></i
+></a>
+<a class="btn btn-primary" style="background-color:white;" href="#!" role="button"
+  ><i class="fab fa-google"></i
+></a>
+			
+		</div>
+	</form>
+	</div>
+	</section>
+</body>
+</html>
